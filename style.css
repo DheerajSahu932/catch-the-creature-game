@@ -1,0 +1,206 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "knight warrior";
+    font-weight: 100;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+  
+}
+body{
+    overflow: hidden;
+}
+.screen{
+    height: 100%;
+    width: 100%;
+    background-color: #561C24;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all ease ease-out 0.6s;
+}
+.screen h1{
+    font-size: 70px;
+    margin-bottom: 30px;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+
+}
+ .screen button{
+    /* margin: 10px; */
+   font-size: 20px;
+   /* font-weight: 400;  */
+   background-color: transparent; 
+   border: 2px solid #E8D8C4;  
+   padding: 18px 30px; 
+   color: #E8D8C4; 
+   /* border-radius: 10px; */
+   cursor: pointer;
+   transition: all ease .1s;
+}
+button:hover{
+    
+    background-color: #E8D8C4;
+    color: #561C24;
+}
+button:active{
+    scale: 0.95;
+}
+.screen h2{
+     font-size: 60px;
+     text-align: center;
+}
+
+.select{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.creature{
+    
+     font-size: 20px;
+     text-align: center;
+    cursor: grab;
+    padding: 20px;
+    border: 2px solid #E8D8C4;
+    transition: all ease linear 0.3s;
+}
+.creature:hover{
+    background-color: #E8D8C4;
+    /* border: none; */
+}
+.creature:active{
+    cursor: grabbing;
+}
+.creature:hover h4{
+    color: #561C24;
+    transition: all ease 0.3s;
+}
+.creature h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.creature img{
+    height: 100px;
+    width: 100px;
+}
+
+.score-time{
+  
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+    padding:25px 45px;
+   font-size: 40px;
+   border-bottom:1px solid #E8D8C4;
+   align-items: center;
+   color: white;
+  
+}
+.score-time h4{
+    font-size: 22px;
+}
+.score-time h5{
+    font-size: 22px;
+}
+
+.playground{
+   
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+   position: relative;
+}
+.playground img{
+    height: 100px;
+    /* width: 100px; */
+    position: absolute;
+     /* object-fit: cover; */
+    cursor: pointer; 
+   
+}
+.Start-over {
+    /* display: block; */
+    height: 100vh;
+   padding-bottom: 0%;
+    padding: 410px 0px ;
+    text-align: center;
+    /* position: absolute; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #7a5d39b2;
+    backdrop-filter: blar(10px);
+    z-index: 99;
+}
+.Start-over h4{
+    /* position: absolute; */
+    /* transform: translate(120% , -70%); */
+    text-transform: uppercase;
+    font-size: 100px;
+   font-family: fantasy;
+   margin-top: -10%;
+  scale: 0;
+}
+.Start-over button{
+    /* position: absolute;
+    transform: translate(500% , 500%); */
+    font-size: 40px;
+    padding: 5px 20px;
+    border: 5px solid #561C24;
+   
+     
+}
+.Start-over h3{
+    /* position: absolute; */
+    text-align: center;
+    /* transform: translate(325% , 50%); */
+   text-transform: capitalize;
+    font-size: 50px;
+   font-family:sans-serif;
+    scale: 0;
+}
+.Start-over h3 span{
+    font-family: sans-serif;
+}
+
+#restart{
+   scale: 0;
+   position: absolute;
+  margin: 2% -3%;
+
+  font-size: 20px;
+  border: 2px solid #561C24;
+  font-family: monospace;
+  border-radius: 5px;
+  padding: 2px 6px;
+ text-transform: uppercase;
+ color: black;
+ 
+}
+#playing{
+   background-image: url(./playing-background.webp);
+   background-size: cover;
+   overflow: hidden;
+   
+}
+#choosing{
+    background-image: url(./creature-bacground.jpg);
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+ }
+ #starting{
+    background-image: url(./play-background.gif.crdownload);
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+    
+ }
